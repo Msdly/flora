@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌿 Flora Indonesia - 20 Jenis Tumbuhan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">Flora Indonesia</a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#plants" class="nav-link">Tumbuhan</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+      <div
+        class="hero-background"
+        style="
+          background-image: url('https://i.pinimg.com/1200x/8e/e0/03/8ee0036ca1a4499037ac0af8aa4571b0.jpg');
+        "
+      ></div>
+      <div class="hero-content">
+        <h1>20 Keindahan Flora Nusantara</h1>
+        <p>
+          Temukan keanekaragaman hayati tumbuhan dari Sabang sampai Merauke.
+        </p>
+        <button class="btn-primary" onclick="scrollToSection('plants')">
+          Lihat Semua Tumbuhan
+        </button>
+      </div>
+    </header>
+
+    <!-- Pencarian & Filter -->
+    <section class="search-filter">
+      <input type="text" id="search-input" placeholder="Cari tumbuhan..." />
+      <select id="category-filter">
+        <option value="">Semua Kategori</option>
+        <option value="berbunga">Berbunga</option>
+        <option value="paku">Paku</option>
+        <option value="monokotil">Monokotil</option>
+        <option value="dikotil">Dikotil</option>
+        <option value="karnivora">Karnivora</option>
+        <option value="epifit">Epifit</option>
+      </select>
+    </section>
+
+    <!-- Daftar 20 Tumbuhan -->
+    <main id="plants" class="plants-container">
+      <!-- 1. Bunga Mawar -->
+      <div class="plant-card" data-category="berbunga">
+        <img
+          src="https://i.pinimg.com/736x/15/fb/e6/15fbe6c5a52ca297278ff23968212ede.jpg"
+          alt="Bunga Mawar"
+        />
+        <div class="plant-info">
+          <h2>Bunga Mawar</h2>
+          <p><strong>Spesies:</strong> Rosa spp.</p>
+          <p><strong>Kategori:</strong> Berbunga</p>
+          <p>Simbol cinta dan keindahan. Tumbuh di dataran tinggi.</p>
+        </div>
+      </div>
+
+      <!-- 2. Pakis Haji -->
+      <div class="plant-card" data-category="paku">
+        <img
+          src="https://i.pinimg.com/736x/84/85/a9/8485a995a00c209076e3a78f8935e383.jpg"
+          alt="Pakis Haji"
+        />
+        <div class="plant-info">
+          <h2>Pakis Haji</h2>
+          <p><strong>Spesies:</strong> Angiopteris evecta</p>
+          <p><strong>Kategori:</strong> Paku</p>
+          <p>Tumbuhan purba dengan daun besar. Hidup di hutan lembap.</p>
+        </div>
+      </div>
+
+      <!-- 3. Pohon Kelapa -->
+      <div class="plant-card" data-category="monokotil">
+        <img
+          src="https://i.pinimg.com/1200x/01/4d/8c/014d8c07c8cb47123a03ad5a12f2be90.jpg"
+          alt="Kelapa"
+        />
+        <div class="plant-info">
+          <h2>Pohon Kelapa</h2>
+          <p><strong>Spesies:</strong> Cocos nucifera</p>
+          <p><strong>Kategori:</strong> Monokotil</p>
+          <p>
+            Disebut "pohon kehidupan" karena semua bagian bisa dimanfaatkan.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4. Pohon Mangga -->
+      <div class="plant-card" data-category="dikotil">
+        <img
+          src="https://i.pinimg.com/736x/19/2c/76/192c7635fc87465be5d19f4b591de9b9.jpg"
+          alt="Mangga"
+        />
+        <div class="plant-info">
+          <h2>Pohon Mangga</h2>
+          <p><strong>Spesies:</strong> Mangifera indica</p>
+          <p><strong>Kategori:</strong> Dikotil</p>
+          <p>Buah tropis yang manis dan segar. Tumbuh di seluruh Indonesia.</p>
+        </div>
+      </div>
+
+      <!-- 5. Anggrek Bulan -->
+      <div class="plant-card" data-category="berbunga">
+        <img
+          src="https://i.pinimg.com/736x/ad/6a/fc/ad6afcee20e50e5317519c00f0f851b8.jpg"
+          alt="Anggrek Bulan"
+        />
+        <div class="plant-info">
+          <h2>Anggrek Bulan</h2>
+          <p><strong>Spesies:</strong> Phalaenopsis amabilis</p>
+          <p><strong>Kategori:</strong> Berbunga</p>
+          <p>Anggrek nasional Indonesia. Mekar indah dan harum.</p>
+        </div>
+      </div>
+
+      <!-- 6. Bambu -->
+      <div class="plant-card" data-category="monokotil">
+        <img
+          src="https://i.pinimg.com/736x/d5/fc/14/d5fc1438a69c6383b69e55cda93b5ca1.jpg"
+          alt="Bambu"
+        />
+        <div class="plant-info">
+          <h2>Bambu</h2>
+          <p><strong>Spesies:</strong> Bambusa spp.</p>
+          <p><strong>Kategori:</strong> Monokotil</p>
+          <p>Tumbuh cepat, digunakan untuk bangunan dan kerajinan.</p>
+        </div>
+      </div>
+
+      <!-- 7. Rafflesia Arnoldii -->
+      <div class="plant-card" data-category="berbunga">
+        <img
+          src="https://i.pinimg.com/1200x/d9/74/dd/d974dd90658b56ecb64c9c4db7499004.jpg"
+          alt="Rafflesia"
+        />
+        <div class="plant-info">
+          <h2>Rafflesia Arnoldii</h2>
+          <p><strong>Spesies:</strong> Rafflesia arnoldii</p>
+          <p><strong>Kategori:</strong> Berbunga</p>
+          <p>Bunga terbesar di dunia. Berbau busuk untuk menarik lalat.</p>
+        </div>
+      </div>
+
+      <!-- 8. Kantong Semar -->
+      <div class="plant-card" data-category="karnivora">
+        <img
+          src="https://i.pinimg.com/736x/09/d9/ec/09d9ec180541959b892e6013f78fd932.jpg"
+          alt="Kantong Semar"
+        />
+        <div class="plant-info">
+          <h2>Kantong Semar</h2>
+          <p><strong>Spesies:</strong> Nepenthes spp.</p>
+          <p><strong>Kategori:</strong> Karnivora</p>
+          <p>Memakan serangga untuk mencukupi nutrisi di tanah miskin.</p>
+        </div>
+      </div>
+
+      <!-- 9. Bunga Bangkai -->
+      <div class="plant-card" data-category="berbunga">
+        <img
+          src="https://i.pinimg.com/736x/0c/19/8d/0c198daca29ade25552c47cef390ca38.jpg"
+          alt="Bunga Bangkai"
+        />
+        <div class="plant-info">
+          <h2>Bunga Bangkai</h2>
+          <p><strong>Spesies:</strong> Amorphophallus titanum</p>
+          <p><strong>Kategori:</strong> Berbunga</p>
+          <p>Mekar setiap beberapa tahun dan berbau busuk.</p>
+        </div>
+      </div>
+
+      <!-- 10. Anggrek Hitam -->
+      <div class="plant-card" data-category="epifit">
+        <img
+          src="https://i.pinimg.com/1200x/0c/56/d9/0c56d9c8d0cf903b9f5a226183617e4f.jpg"
+          alt="Anggrek Hitam"
+        />
+        <div class="plant-info">
+          <h2>Anggrek Hitam</h2>
+          <p><strong>Spesies:</strong> Coelogyne pandurata</p>
+          <p><strong>Kategori:</strong> Epifit</p>
+          <p>Endemik Kalimantan. Bunganya unik dan langka.</p>
+        </div>
+      </div>
+
+      <!-- 11. Palem Sagu -->
+      <div class="plant-card" data-category="monokotil">
+        <img
+          src="https://i.pinimg.com/736x/70/a0/d1/70a0d15e728116641544d734b3134f3f.jpg"
+          alt="Palem Sagu"
+        />
+        <div class="plant-info">
+          <h2>Palem Sagu</h2>
+          <p><strong>Spesies:</strong> Metroxylon sagu</p>
+          <p><strong>Kategori:</strong> Monokotil</p>
+          <p>Sumber karbohidrat penting di Papua dan Maluku.</p>
+        </div>
+      </div>
+
+      <!-- 12. Jati -->
+      <div class="plant-card" data-category="dikotil">
+        <img
+          src="https://i.pinimg.com/736x/a1/b8/00/a1b800bd4d55e35cf98a32b40a657f36.jpg"
+          alt="Jati"
+        />
+        <div class="plant-info">
+          <h2>Pohon Jati</h2>
+          <p><strong>Spesies:</strong> Tectona grandis</p>
+          <p><strong>Kategori:</strong> Dikotil</p>
+          <p>Kayunya kuat dan tahan lama, diekspor ke seluruh dunia.</p>
+        </div>
+      </div>
+
+      <!-- 13. Meranti -->
+      <div class="plant-card" data-category="dikotil">
+        <img
+          src="https://i.pinimg.com/736x/d9/df/6b/d9df6b2d1cef191d4b06f7bd9766f99a.jpg"
+          alt="Meranti"
+        />
+        <div class="plant-info">
+          <h2>Pohon Meranti</h2>
+          <p><strong>Spesies:</strong> Shorea spp.</p>
+          <p><strong>Kategori:</strong> Dikotil</p>
+          <p>Kayu komersial penting dari hutan hujan tropis.</p>
+        </div>
+      </div>
+
+      <!-- 14. Lumut -->
+      <div class="plant-card" data-category="paku">
+        <img
+          src="https://i.pinimg.com/736x/ad/5c/88/ad5c88bbf9365ab48e4755ce06860a39.jpg"
+          alt="Lumut"
+        />
+        <div class="plant-info">
+          <h2>Lumut</h2>
+          <p><strong>Spesies:</strong> Bryophyta</p>
+          <p><strong>Kategori:</strong> Paku</p>
+          <p>Tumbuh di tempat lembap. Berperan dalam konservasi air.</p>
+        </div>
+      </div>
+
+      <!-- 15. Bunga Melati -->
+      <div class="plant-card" data-category="berbunga">
+        <img
+          src="https://i.pinimg.com/1200x/e9/e0/bc/e9e0bc48c8e729d9daefae50951c4d58.jpg"
+          alt="Melati"
+        />
+        <div class="plant-info">
+          <h2>Bunga Melati</h2>
+          <p><strong>Spesies:</strong> Jasminum sambac</p>
+          <p><strong>Kategori:</strong> Berbunga</p>
+          <p>Simbol kemurnian dan keanggunan. Bunga nasional Indonesia.</p>
+        </div>
+      </div>
+
+      <!-- 16. Puring -->
+      <div class="plant-card" data-category="berbunga">
+        <img
+          src="https://i.pinimg.com/736x/3b/62/f0/3b62f0ba53006aedac27a8b053690e54.jpg"
+          alt="Puring"
+        />
+        <div class="plant-info">
+          <h2>Tanaman Puring</h2>
+          <p><strong>Spesies:</strong> Codiaeum variegatum</p>
+          <p><strong>Kategori:</strong> Berbunga</p>
+          <p>Daunnya berwarna-warni, sering jadi hiasan taman.</p>
+        </div>
+      </div>
+
+      <!-- 17. Sirih -->
+      <div class="plant-card" data-category="dikotil">
+        <img
+          src="https://i.pinimg.com/736x/68/2d/fa/682dfa00c6d4d46ce2a0039a0c1891f6.jpg"
+          alt="Sirih"
+        />
+        <div class="plant-info">
+          <h2>Daun Sirih</h2>
+          <p><strong>Spesies:</strong> Piper betle</p>
+          <p><strong>Kategori:</strong> Dikotil</p>
+          <p>Digunakan dalam tradisi dan obat herbal.</p>
+        </div>
+      </div>
+
+      <!-- 18. Anggrek Vanda -->
+      <div class="plant-card" data-category="epifit">
+        <img
+          src="https://i.pinimg.com/1200x/93/63/7e/93637e6d7007fade44b687e30305437d.jpg"
+          alt="Anggrek Vanda"
+        />
+        <div class="plant-info">
+          <h2>Anggrek Vanda</h2>
+          <p><strong>Spesies:</strong> Vanda tricolor</p>
+          <p><strong>Kategori:</strong> Epifit</p>
+          <p>Bunganya cerah dan harum. Tumbuh menempel di pohon.</p>
+        </div>
+      </div>
+
+      <!-- 19. Keladi Hias -->
+      <div class="plant-card" data-category="monokotil">
+        <img
+          src="https://i.pinimg.com/1200x/47/2d/1e/472d1ee1b6a127208090144972fa3eae.jpg"
+          alt="Keladi Hias"
+        />
+        <div class="plant-info">
+          <h2>Keladi Hias</h2>
+          <p><strong>Spesies:</strong> Caladium spp.</p>
+          <p><strong>Kategori:</strong> Monokotil</p>
+          <p>Populer sebagai tanaman hias karena daunnya yang cantik.</p>
+        </div>
+      </div>
+
+      <!-- 20. Paku Tanduk Rusa -->
+      <div class="plant-card" data-category="paku">
+        <img
+          src="https://i.pinimg.com/736x/87/16/5c/87165c550782d2a5a1354389b4a8f484.jpg"
+          alt="Paku Tanduk Rusa"
+        />
+        <div class="plant-info">
+          <h2>Paku Tanduk Rusa</h2>
+          <p><strong>Spesies:</strong> Platycerium spp.</p>
+          <p><strong>Kategori:</strong> Paku</p>
+          <p>Bentuknya unik, sering digantung sebagai dekorasi rumah.</p>
+        </div>
+      </div>
+      <div class="plant-card" data-category="paku">
+        <img
+          src="https://i.pinimg.com/736x/38/46/89/384689faaa105fa86348a128bfd896ac.jpg"
+          alt="Paku Tanduk Rusa"
+        />
+        <div class="plant-info">
+          <h2>Bunga Kamboja</h2>
+          <p><strong>Spesies:</strong> Platycerium spp.</p>
+          <p><strong>Kategori:</strong> Paku</p>
+          <p>Sering ditemukan di pekarangan dan tempat suci. Wanginya harum di malam hari dan tahan panas.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Tentang -->
+    <section id="about" class="about-section">
+      <h2>Tentang Website Ini</h2>
+      <p>
+        Website ini menampilkan 20 jenis tumbuhan khas Indonesia untuk edukasi
+        dan pelestarian alam. Mari kenali, cintai, dan lindungi kekayaan flora
+        Nusantara.
+      </p>
+      <p><strong>Dibuat dengan cinta untuk lingkungan 🌱</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Flora Indonesia. Edukasi Keanekaragaman Hayati.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
